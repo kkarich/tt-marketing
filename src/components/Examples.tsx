@@ -49,34 +49,29 @@ function ImageClipPaths({
 
 const examples = [
   {
-    name: 'Steven McHail',
-    role: 'Designer at Globex Corporation',
+    name: 'Starter',
+    role: 'A blank scen',
     image: stevenMchailImage,
   },
   {
-    name: 'Jaquelin Isch',
+    name: 'Fire Safety',
     role: 'UX Design at InGen',
     image: jaquelinIschImage,
   },
   {
-    name: 'Dianne Guilianelli',
+    name: 'Table Saw',
     role: 'General Manager at Initech',
     image: dianneGuilianelliImage,
   },
   {
-    name: 'Ronni Cantadore',
+    name: 'Fork Lift',
     role: 'Design Engineer at Weyland-Yutani',
     image: ronniCantadoreImage,
   },
   {
-    name: 'Erhart Cockrin',
+    name: 'Loader',
     role: 'Product Lead at Cyberdyne Systems',
     image: erhartCockrinImage,
-  },
-  {
-    name: 'Parker Johnson',
-    role: 'UI Designer at MomCorp',
-    image: parkerJohnsonImage,
   },
 ]
 
@@ -114,31 +109,28 @@ export function Examples() {
           >
             Examples
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
-          </p>
+          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900"></p>
         </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 ui-not-focus-visible:outline-none sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3">
-          {examples.map((speaker, speakerIndex) => (
-            <div key={speakerIndex}>
+          {examples.map((example, exampleIndex) => (
+            <div key={exampleIndex}>
               <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
                 <div
                   className={clsx(
                     'absolute bottom-6 left-0 right-4 top-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
                     ['border-blue-300', 'border-indigo-300', 'border-sky-300'][
-                      speakerIndex % 3
+                      exampleIndex % 3
                     ],
                   )}
                 />
                 <div
                   className="absolute inset-0 bg-indigo-50"
-                  style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
+                  style={{ clipPath: `url(#${id}-${exampleIndex % 3})` }}
                 >
                   <Image
                     className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
-                    src={speaker.image}
+                    src={example.image}
                     alt=""
                     priority
                     sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -146,11 +138,8 @@ export function Examples() {
                 </div>
               </div>
               <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
-                {speaker.name}
+                {example.name}
               </h3>
-              <p className="mt-1 text-base tracking-tight text-slate-500">
-                {speaker.role}
-              </p>
             </div>
           ))}
         </div>

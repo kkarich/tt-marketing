@@ -1,20 +1,21 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
+
+import Eaton from '@/images/logos/Eaton.png'
+import Techstars from '@/images/logos/Techstars.png'
+import Exelon from '@/images/logos/Exelon.png'
+import NIU from '@/images/logos/NIU.png'
+import UofI from '@/images/logos/UofI.png'
+import Berkely from '@/images/logos/Berkeley Lab.png'
 
 const sponsors = [
-  { name: 'Transistor', logo: logoTransistor },
-  { name: 'Tuple', logo: logoTuple },
-  { name: 'StaticKit', logo: logoStaticKit },
-  { name: 'Mirage', logo: logoMirage },
-  { name: 'Laravel', logo: logoLaravel },
-  { name: 'Statamic', logo: logoStatamic },
+  { name: 'Eaton', logo: Eaton },
+  { name: 'Exelon', logo: Exelon },
+  { name: 'Techstars', logo: Techstars },
+  { name: 'U of I', logo: UofI },
+  { name: 'Berkely', logo: Berkely },
+  { name: 'NIU', logo: NIU },
 ]
 
 export function Sponsors() {
@@ -30,7 +31,12 @@ export function Sponsors() {
               key={sponsor.name}
               className="flex items-center justify-center"
             >
-              <Image src={sponsor.logo} alt={sponsor.name} unoptimized />
+              <Image
+                src={sponsor.logo}
+                alt={sponsor.name}
+                unoptimized
+                className="grayscale"
+              />
             </div>
           ))}
         </div>
