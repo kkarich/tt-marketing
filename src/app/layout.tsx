@@ -19,11 +19,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - DeceptiConf',
-    default: 'DeceptiConf - A community-driven design conference',
+    template: '%s - Transfer Thought',
+    default: 'Transfer Thought - A no-code WebXR Platform',
   },
   description:
-    'At DeceptiConf you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected.',
+    'If you can make a PowerPoint, you can create Virtual Reality with Transfer Thought Transfer Thought is an open source platform that allows anyone to easily create and deploy Virtual Reality experiences that run directly in the browser!',
 }
 
 export default function RootLayout({

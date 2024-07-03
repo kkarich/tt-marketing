@@ -34,10 +34,10 @@ export function CTA() {
           />
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
-              <p className="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
+              <p className="font-display text-4xl font-medium tracking-tighter text-cyan-900 sm:text-5xl">
                 Stay up to date
               </p>
-              <p className="mt-4 text-lg tracking-tight text-blue-900">
+              <p className="mt-4 text-lg tracking-tight text-cyan-900">
                 Star us on github to stay up to date
               </p>
             </div>

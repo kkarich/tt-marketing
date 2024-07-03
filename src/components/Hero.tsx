@@ -8,20 +8,15 @@ export function Hero() {
       <BackgroundImage className="-bottom-14 -top-36" />
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h1 className="font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-7xl">
+          <h1 className="font-display text-5xl font-bold tracking-tighter text-cyan-600 sm:text-7xl">
             No-Code WebXR
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
+          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-cyan-900">
             <p>
-              The next generation of web users are tech-savvy and suspicious.
-              They know how to use dev tools, they can detect a phishing scam
-              from a mile away, and they certainly aren’t accepting any checks
-              from Western Union.
-            </p>
-            <p>
-              At DeceptiConf you’ll learn about the latest dark patterns being
-              developed to trick even the smartest visitors, and you’ll learn
-              how to deploy them without ever being detected.
+              If you can make a PowerPoint, you can create Virtual Reality with
+              Transfer Thought Transfer Thought is an open source platform that
+              allows anyone to easily create and deploy Virtual Reality
+              experiences that run directly in the browser!
             </p>
           </div>
           <Button

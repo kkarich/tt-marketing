@@ -7,24 +7,11 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
-import andrewGreeneImage from '@/images/avatars/andrew-greene.jpg'
-import cathleneBurrageImage from '@/images/avatars/cathlene-burrage.jpg'
-import damarisKimuraImage from '@/images/avatars/damaris-kimura.jpg'
-import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import giordanoSagucioImage from '@/images/avatars/giordano-sagucio.jpg'
-import gordonSandersonImage from '@/images/avatars/gordon-sanderson.jpg'
-import heatherTerryImage from '@/images/avatars/heather-terry.jpg'
-import ibrahimFraschImage from '@/images/avatars/ibrahim-frasch.jpg'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import kimberlyParsonsImage from '@/images/avatars/kimberly-parsons.jpg'
-import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import piersWilkinsImage from '@/images/avatars/piers-wilkins.jpg'
-import richardAstley from '@/images/avatars/richard-astley.jpg'
-import rinaldoBeynonImage from '@/images/avatars/rinaldo-beynon.jpg'
-import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
-import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
+
+import Fire from '@/images/Fire.png'
+import Forklift from '@/images/Forklift.png'
+import TableSaw from '@/images/TableSaw.png'
+import Loader from '@/images/Loader.png'
 
 function ImageClipPaths({
   id,
@@ -49,29 +36,24 @@ function ImageClipPaths({
 
 const examples = [
   {
-    name: 'Starter',
-    role: 'A blank scen',
-    image: stevenMchailImage,
-  },
-  {
     name: 'Fire Safety',
     role: 'UX Design at InGen',
-    image: jaquelinIschImage,
+    image: Fire,
   },
   {
     name: 'Table Saw',
     role: 'General Manager at Initech',
-    image: dianneGuilianelliImage,
+    image: TableSaw,
   },
   {
     name: 'Fork Lift',
     role: 'Design Engineer at Weyland-Yutani',
-    image: ronniCantadoreImage,
+    image: Forklift,
   },
   {
     name: 'Loader',
     role: 'Product Lead at Cyberdyne Systems',
-    image: erhartCockrinImage,
+    image: Loader,
   },
 ]
 
@@ -105,11 +87,11 @@ export function Examples() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
+            className="font-display text-4xl font-medium tracking-tighter text-cyan-600 sm:text-5xl"
           >
             Examples
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900"></p>
+          <p className="mt-4 font-display text-2xl tracking-tight text-cyan-900"></p>
         </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 ui-not-focus-visible:outline-none sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3">
@@ -119,7 +101,7 @@ export function Examples() {
                 <div
                   className={clsx(
                     'absolute bottom-6 left-0 right-4 top-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
-                    ['border-blue-300', 'border-indigo-300', 'border-sky-300'][
+                    ['border-cyan-300', 'border-indigo-300', 'border-sky-300'][
                       exampleIndex % 3
                     ],
                   )}
