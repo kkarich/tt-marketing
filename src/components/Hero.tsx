@@ -14,9 +14,12 @@ export function Hero() {
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-cyan-900">
             <p>
               If you can make a PowerPoint, you can create Virtual Reality with
-              Transfer Thought Transfer Thought is an open source platform that
-              allows anyone to easily create and deploy Virtual Reality
-              experiences that run directly in the browser!
+              Transfer Thought.
+            </p>
+            <p>
+              Transfer Thought is an open source platform that allows anyone to
+              easily create and deploy Virtual Reality experiences that run
+              directly in the browser!
             </p>
           </div>
           <Button
