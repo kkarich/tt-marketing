@@ -10,8 +10,9 @@ import { DiamondIcon } from '@/components/DiamondIcon'
 
 import Fire from '@/images/Fire.png'
 import Forklift from '@/images/Forklift.png'
-import TableSaw from '@/images/TableSaw.png'
+import LOTO from '@/images/LOTO.jpg'
 import Loader from '@/images/Loader.png'
+import Link from 'next/link'
 
 function ImageClipPaths({
   id,
@@ -39,21 +40,25 @@ const examples = [
     name: 'Fire Safety',
     role: 'UX Design at InGen',
     image: Fire,
-  },
-  {
-    name: 'Table Saw',
-    role: 'General Manager at Initech',
-    image: TableSaw,
+    link: 'https://scenario.transferthought.com/take/b88151e2-98af-44dd-966e-71602bb4be8f',
   },
   {
     name: 'Fork Lift',
     role: 'Design Engineer at Weyland-Yutani',
     image: Forklift,
+    link: 'https://scenario.transferthought.com/take/49e31bc0-502c-40ba-aeee-328d55e5c938',
   },
   {
     name: 'Loader',
     role: 'Product Lead at Cyberdyne Systems',
     image: Loader,
+    link: 'https://scenario.transferthought.com/take/5401dbe4-e075-4a38-8b6c-763662766ff2',
+  },
+  {
+    name: 'LOCKOUT TAGOUT',
+    role: 'General Manager at Initech',
+    image: LOTO,
+    link: 'https://scenario.transferthought.com/take/2fa4dc2c-e555-4db1-9a35-87bc510cd169',
   },
 ]
 
@@ -96,7 +101,7 @@ export function Examples() {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 ui-not-focus-visible:outline-none sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3">
           {examples.map((example, exampleIndex) => (
-            <div key={exampleIndex}>
+            <Link href={example.link} key={exampleIndex}>
               <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
                 <div
                   className={clsx(
@@ -122,7 +127,7 @@ export function Examples() {
               <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
                 {example.name}
               </h3>
-            </div>
+            </Link>
           ))}
         </div>
       </Container>
